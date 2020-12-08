@@ -18,8 +18,7 @@ for i in passwords:
 
     policy_letter = policy_split[1]
 
-    #(First OR last correct) AND (first and last not equal)
-    if((password[min-1]==policy_letter or password[max-1]==policy_letter) and (password[min-1]!=password[max-1])):
+    if((password[min-1]==policy_letter) ^ (password[max-1]==policy_letter)):
         counter+=1
 
 print(counter)

@@ -1,4 +1,3 @@
-import numpy as np
 map = []
 count = 0
 position = 0
